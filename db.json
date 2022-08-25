@@ -107,6 +107,18 @@
       "file": "C:\\fakepath\\ChristianC-CV.docx",
       "notes": "el cliente solicita un servidor",
       "id": 12
+    },
+    {
+      "picked": "fixed",
+      "name": "christian en desarrollo",
+      "createdate": "2022-08-31",
+      "deliverydate": "2022-09-03",
+      "numberbox": 159963,
+      "material": "flexible",
+      "urgent": true,
+      "file": "C:\\fakepath\\LettrePresentationCCCL.docx",
+      "notes": "solo test en desarrollo",
+      "id": 13
     }
   ]
 }

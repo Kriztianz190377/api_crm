@@ -1,16 +1,14 @@
-
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Client from '../../components/Client';
 
 const ShowFixed = () => {
   const [clients, setClients] = useState([]);
-  
-  
+
   useEffect(() => {
     const getRemovableCl = async () => {
       try {
-        URL = 'http://localhost:4000/clients';
+        URL = `${import.meta.env.VITE_API_URL}/clients`;
         const response = await fetch(URL);
         const result = await response.json();
         const removable = result.filter(
@@ -22,27 +20,26 @@ const ShowFixed = () => {
       }
     };
     getRemovableCl();
-
   }, []);
-const handleDelete = async (id) => {
-  const confirmation = confirm('Do you want to delete this client?');
+  const handleDelete = async (id) => {
+    const confirmation = confirm('Do you want to delete this client?');
 
-  if (confirmation) {
-    try {
-      URL = `http://localhost:4000/clients/${id}`;
-      const response = await fetch(URL, {
-        method: 'DELETE',
-      });
-      await response.json();
+    if (confirmation) {
+      try {
+        URL = `${import.meta.env.VITE_API_URL}/${id}`;
+        const response = await fetch(URL, {
+          method: 'DELETE',
+        });
+        await response.json();
 
-      const arrayClients = clients.filter((client) => client.id !== id);
+        const arrayClients = clients.filter((client) => client.id !== id);
 
-      setClients(arrayClients);
-    } catch (error) {
-      console.log(error);
+        setClients(arrayClients);
+      } catch (error) {
+        console.log(error);
+      }
     }
-  }
-};  
+  };
 
   return (
     <>
@@ -86,7 +83,7 @@ const handleDelete = async (id) => {
           </tr>
         </thead>
         <tbody>
-          {clients.map((client) => (
+          {clients.map(client => (
             <Client
               key={client.id}
               client={client}
@@ -100,5 +97,3 @@ const handleDelete = async (id) => {
 };
 
 export default ShowFixed;
-
-

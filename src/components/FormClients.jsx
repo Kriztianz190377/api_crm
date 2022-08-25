@@ -32,7 +32,7 @@ const FormClients = ({ title, client }) => {
         
         //edit client
 
-        URL = `http://localhost:4000/clients/${client.id}`;
+        URL = `${import.meta.env.VITE_API_URL}/clients/${client.id}`;
         response = await fetch(URL, {
           method: 'PUT',
           body: JSON.stringify(values),
@@ -42,7 +42,7 @@ const FormClients = ({ title, client }) => {
         });
       } else {
         //New client
-        URL = 'http://localhost:4000/clients';
+        URL = `${import.meta.env.VITE_API_URL}/clients`;
         response = await fetch(URL, {
           method: 'POST',
           body: JSON.stringify(values),

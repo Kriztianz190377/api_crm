@@ -3,6 +3,7 @@
 // formik
 // yup
 //json-server - npm
+// .env
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './layout/Layout';
@@ -17,6 +18,8 @@ import ShowFixed from './layout/page/ShowFixed';
 import ShowClient from './layout/page/ShowClient';
 
 function App() {
+console.log(import.meta.env.VITE_API_URL);
+
   return (
     <BrowserRouter>
       <Routes>

@@ -8,7 +8,7 @@ const Machining = () => {
   useEffect(() => {
     const getRemovableCl = async () => {
       try {
-        URL = 'http://localhost:4000/clients';
+        URL = `${import.meta.env.VITE_API_URL}/clients`;
         const response = await fetch(URL);
         const result = await response.json();
 
@@ -25,13 +25,13 @@ const Machining = () => {
 
     if (confirmation) {
       try {
-        URL = `http://localhost:4000/clients/${id}`;
+        URL = `${import.meta.env.VITE_API_URL}/clients/${id}`;
         const response = await fetch(URL, {
           method: 'DELETE',
         });
         await response.json();
 
-        const arrayClients = clients.filter((client) => client.id !== id);
+        const arrayClients = clients.filter(client => client.id !== id);
 
         setClients(arrayClients);
         
@@ -83,7 +83,7 @@ const Machining = () => {
           </tr>
         </thead>
         <tbody>
-          {clients.map((client) => (
+          {clients.map(client => (
             <Client
               key={client.id}
               client={client}
