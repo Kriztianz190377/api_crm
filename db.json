@@ -1,0 +1,112 @@
+{
+  "clients": [
+    {
+      "picked": "removable",
+      "name": "Christian Castaneda",
+      "createdate": "2022-08-21",
+      "deliverydate": "2022-08-27",
+      "numberbox": 123456,
+      "material": " hard",
+      "urgent": true,
+      "file": "C:\\fakepath\\ChristianC-CV.docx",
+      "notes": "test removable",
+      "id": 1
+    },
+    {
+      "picked": "removable",
+      "name": "jairo Lopez!!!!!!",
+      "createdate": "2022-08-21",
+      "deliverydate": "2022-08-26",
+      "numberbox": 1235689,
+      "material": "flexible",
+      "urgent": true,
+      "file": "C:\\fakepath\\LettrePresentationCCCL.docx",
+      "notes": "test 3 removabla",
+      "id": 3
+    },
+    {
+      "picked": "fixed",
+      "name": "jairo Lopez!!!!!!",
+      "createdate": "2022-08-21",
+      "deliverydate": "2022-08-22",
+      "numberbox": 789456,
+      "material": " hard",
+      "urgent": "",
+      "file": "C:\\fakepath\\lettre confirmation de graduation -Prog analiste int. CHRISTIAN CASTAÑEDA[3187].pdf",
+      "notes": "desde fixed",
+      "id": 4
+    },
+    {
+      "picked": "fixed",
+      "name": "christian fixed",
+      "createdate": "2022-08-21",
+      "deliverydate": "2022-09-02",
+      "numberbox": 789456,
+      "material": "flexible",
+      "urgent": "",
+      "file": "C:\\fakepath\\Feedback.docx",
+      "notes": "desde fiexd",
+      "id": 5
+    },
+    {
+      "picked": "removable",
+      "name": "jairo lopez",
+      "createdate": "2022-08-21",
+      "deliverydate": "2022-08-26",
+      "numberbox": 456123,
+      "material": " hard",
+      "urgent": true,
+      "file": "C:\\fakepath\\LettrePresentationCCCL.docx",
+      "notes": "desde removable",
+      "id": 6
+    },
+    {
+      "picked": "removable",
+      "name": "Gianina garcia",
+      "createdate": "2022-08-21",
+      "deliverydate": "2022-08-24",
+      "numberbox": 12358,
+      "material": " hard",
+      "urgent": true,
+      "file": "C:\\fakepath\\Feedback.docx",
+      "notes": "desde remobible",
+      "id": 8
+    },
+    {
+      "picked": "removable",
+      "name": "alberto lopez",
+      "createdate": "2022-09-18",
+      "deliverydate": "2022-08-25",
+      "numberbox": 459126,
+      "material": " hard",
+      "urgent": "",
+      "file": "C:\\fakepath\\LettrePresentationCCCL.docx",
+      "notes": "pas urgente",
+      "id": 9
+    },
+    {
+      "picked": "fixed",
+      "name": "Christian sin note",
+      "createdate": "2022-08-23",
+      "deliverydate": "2022-08-27",
+      "numberbox": 753159,
+      "material": " hard",
+      "urgent": true,
+      "file": "C:\\fakepath\\lettre confirmation de graduation -Prog analiste int. CHRISTIAN CASTAÑEDA[3187].pdf",
+      "notes": "",
+      "id": 10
+    },
+    {
+      "picked": "fixed",
+      "name": "juan pedro actualizar",
+      "createdate": "2022-08-24",
+      "deliverydate": "2022-09-03",
+      "numberbox": 741852,
+      "material": " hard",
+      "urgent": true,
+      "file": "C:\\fakepath\\ChristianC-CV.docx",
+      "notes": "el cliente solicita un servidor",
+      "id": 12
+    }
+  ]
+}

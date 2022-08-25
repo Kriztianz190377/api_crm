@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.img{
+    background-image: url(./assets/smile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
